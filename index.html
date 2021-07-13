@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bs_login</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css'
+        integrity='sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=='
+        crossorigin='anonymous' />
+
+    <style>
+        .container-fluid {
+            background: url(./images/13337.jpg) no-repeat center center/cover;
+        }
+
+        .bgcolor {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .rounded {
+            border-radius: 1rem !important;
+        }
+
+        .position-absolute {
+            top: 14%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .rounded-circle {
+            width: 5rem;
+            height: 5rem;
+        }
+
+        .userlg {
+            color: white;
+        }
+
+        .input-group-text {
+            border: none;
+            background-color: white;
+        }
+
+        .form-control {
+            border: none;
+        }
+
+        .text-sm {
+            font-size: 0.6rem;
+        }
+
+        .form-check-input {
+            color: #efefef;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid vh-100 d-flex justify-content-center align-items-center">
+        <div class="row">
+            <div class="position-absolute rounded-circle bg-secondary d-flex justify-content-center align-items-center mt-5">
+                <i class="far fa-user fa-3x userlg"></i>
+            </div>
+            <div class="col bgcolor rounded p-5">
+
+                <h3 class="text-center text-muted">Sign In</h3>
+
+                <div class="form-group mt-3">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user-alt"></i></span>
+                        </div>
+                        <input class="form-control" placeholder="Username">
+                    </div>
+
+
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                        </div>
+                        <input class="form-control" placeholder="Password">
+                    </div>
+
+
+                    <button type="submit" class="btn btn-info col text-center mx-auto mt-2">Login</button>
+
+                    <div class="row m-2 d-flex justify-content-between">
+                        <div class="col">
+                            <div class="form-check p-0">
+                                <input class="form-check-input mt-2" type="checkbox">
+                                <label class="form-check-label text-secondary text-sm text-left" for="defaultCheck1">
+                                    Remember me
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col p-0 text-secondary text-sm mt-1 text-right">Forgot Password?</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
